@@ -563,7 +563,7 @@ footer img {
 
 
 /* Media Query */
-@media(max-width:850px) {
+@media(max-width:1024px) {
     #navbar {
         display: flex;
         flex-direction: column;
@@ -572,7 +572,7 @@ footer img {
         position: fixed;
         top: 0px;
         right: -300px;
-        height: 100vh;
+        height: 80vh;
         width: 300px;
         background-color: #fff;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
@@ -608,7 +608,6 @@ footer img {
 
     #hero {
         height: 30vh;
-        /* background-position: top 30% right 30%; */
         width: 100%;
         background-color: rgb(241, 238, 233);
         background-repeat: no-repeat;
@@ -659,9 +658,10 @@ footer img {
     }
 }
 
-@media(max-width:420px) {
+@media(max-width:768px) {
     #navbar {
-        width: 500px;
+        width: 600px;
+        height: 50vh;
         padding: 80px 0 0 10px;
         transition: 0.3s;
     }
@@ -678,7 +678,6 @@ footer img {
         position: absolute;
         top: 30px;
         left: 30px;
-        color: black;
         font-size: 25px;
         display: initial;
     }
@@ -779,7 +778,144 @@ footer img {
     }
 
     footer .col {
+        padding-left: 60px;
+    }
+}
 
+@media(max-width:480px) {
+    #navbar {
+        width: 500px;
+        height: 70vh;
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #close {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: black;
+        font-size: 25px;
+        display: initial;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #hero {
+        height: 50vh;
+        padding: 0 10px;
+        background-position: 55%;
+    }
+
+
+    #ai {
+        min-width: 600px;
+        height: 70vh;
+        background-color: #fff;
+        background-position: top 30% right 0%;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #ai h1 {
+        width: 300px;
+        padding-left: 10px;
+    }
+
+    #ai h5 {
+        width: 300px;
+        padding-left: 10px;
+    }
+
+    #ai .men {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    #doc h2 {
+        width: 500px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #doc .text-container {
+        justify-content: center;
+    }
+
+    #doc .text-container .pers {
+        width: 400px;
+        padding-top: 10px;
+        margin-left: 20px;
+    }
+
+    #doc .text-container .cust {
+        width: 500px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    #doc .text-container .cont {
+        width: 500px;
+        margin-left: 20px;
+    }
+
+    #doc .text-container .simp {
+        /* width: 500px;
+        margin-left: 20px;
+        margin-bottom: 20px; */
+        width: 500px;
+        margin-bottom: 0px;
+    }
+
+    #ensure {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #ensure .en-text {
+        padding-top: 80px;
+        margin-top: 250px;
+        text-align: center;
+        padding-left: 50px;
+        justify-content: center;
+    }
+
+    #ensure .pro-container {
+        justify-content: center;
+    }
+
+    #test .text-container {
+        padding-left: 20px;
+    }
+
+    #service .pro-container {
+        justify-content: center;
+    }
+
+    #prod .imgs {
+        width: 100%;
+        padding-top: 80px;
+    }
+
+    footer .col {
+        padding-left: 10px;
+    }
+
+    footer .col {
         padding-left: 60px;
     }
 }
